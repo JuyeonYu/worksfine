@@ -21,6 +21,9 @@
 		B5CF18E624E7BF0400B6AD88 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF18E524E7BF0400B6AD88 /* ChatView.swift */; };
 		B5CF18E824E7BF0D00B6AD88 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF18E724E7BF0D00B6AD88 /* MessageView.swift */; };
 		B5CF18EA24E7BF1300B6AD88 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF18E924E7BF1300B6AD88 /* MoreView.swift */; };
+		CE03C4CA24EC2A26009DB475 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C4C924EC2A26009DB475 /* ViewHelper.swift */; };
+		CE03C4CD24EC2B78009DB475 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C4CC24EC2B78009DB475 /* Extensions.swift */; };
+		CE03C4D124EC2D96009DB475 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03C4D024EC2D96009DB475 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		B5CF18E524E7BF0400B6AD88 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B5CF18E724E7BF0D00B6AD88 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		B5CF18E924E7BF1300B6AD88 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		CE03C4C924EC2A26009DB475 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		CE03C4CC24EC2B78009DB475 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE03C4D024EC2D96009DB475 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		B5CF18BE24E7904100B6AD88 /* ucm3 */ = {
 			isa = PBXGroup;
 			children = (
+				CE03C4CB24EC2B69009DB475 /* Extensions */,
+				CE03C4C824EC2A11009DB475 /* Helper */,
 				B5CF18D424E7907500B6AD88 /* login */,
 				B5CF18DC24E7BCA900B6AD88 /* main */,
 				B5CF18D324E7906400B6AD88 /* application */,
@@ -122,7 +130,8 @@
 		B5CF18DC24E7BCA900B6AD88 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				B5CF18DD24E7BCBA00B6AD88 /* MainView.swift */,
+				CE03C4CE24EC2D7B009DB475 /* Profile */,
+				CE03C4C324EC298B009DB475 /* View */,
 				B5CF18DF24E7BE8000B6AD88 /* organization */,
 				B5CF18E024E7BE9A00B6AD88 /* chat */,
 				B5CF18E124E7BEA000B6AD88 /* message */,
@@ -134,10 +143,7 @@
 		B5CF18DF24E7BE8000B6AD88 /* organization */ = {
 			isa = PBXGroup;
 			children = (
-				B5CF18E324E7BECE00B6AD88 /* OrganizationView.swift */,
-				B5CF18E524E7BF0400B6AD88 /* ChatView.swift */,
-				B5CF18E724E7BF0D00B6AD88 /* MessageView.swift */,
-				B5CF18E924E7BF1300B6AD88 /* MoreView.swift */,
+				CE03C4C424EC2996009DB475 /* View */,
 			);
 			path = organization;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 		B5CF18E024E7BE9A00B6AD88 /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				CE03C4C524EC299E009DB475 /* View */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 		B5CF18E124E7BEA000B6AD88 /* message */ = {
 			isa = PBXGroup;
 			children = (
+				CE03C4C624EC29A6009DB475 /* View */,
 			);
 			path = message;
 			sourceTree = "<group>";
@@ -159,8 +167,81 @@
 		B5CF18E224E7BEA500B6AD88 /* more */ = {
 			isa = PBXGroup;
 			children = (
+				CE03C4C724EC29AD009DB475 /* View */,
 			);
 			path = more;
+			sourceTree = "<group>";
+		};
+		CE03C4C324EC298B009DB475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF18DD24E7BCBA00B6AD88 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE03C4C424EC2996009DB475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF18E324E7BECE00B6AD88 /* OrganizationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE03C4C524EC299E009DB475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF18E524E7BF0400B6AD88 /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE03C4C624EC29A6009DB475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF18E724E7BF0D00B6AD88 /* MessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE03C4C724EC29AD009DB475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF18E924E7BF1300B6AD88 /* MoreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE03C4C824EC2A11009DB475 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C4C924EC2A26009DB475 /* ViewHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CE03C4CB24EC2B69009DB475 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C4CC24EC2B78009DB475 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE03C4CE24EC2D7B009DB475 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C4CF24EC2D8B009DB475 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CE03C4CF24EC2D8B009DB475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE03C4D024EC2D96009DB475 /* ProfileView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,13 +318,16 @@
 				B5CF18C024E7904100B6AD88 /* AppDelegate.swift in Sources */,
 				B5CF18E424E7BECE00B6AD88 /* OrganizationView.swift in Sources */,
 				B5CF18DE24E7BCBA00B6AD88 /* MainView.swift in Sources */,
+				CE03C4D124EC2D96009DB475 /* ProfileView.swift in Sources */,
 				B5CF18C224E7904100B6AD88 /* SceneDelegate.swift in Sources */,
 				B5CF18E824E7BF0D00B6AD88 /* MessageView.swift in Sources */,
 				B5CF18E624E7BF0400B6AD88 /* ChatView.swift in Sources */,
 				B5CF18D724E790B100B6AD88 /* LoginView.swift in Sources */,
 				B5CF18C424E7904100B6AD88 /* ContentView.swift in Sources */,
+				CE03C4CD24EC2B78009DB475 /* Extensions.swift in Sources */,
 				B5CF18D924E7949300B6AD88 /* LoginPreferenceView.swift in Sources */,
 				B5CF18EA24E7BF1300B6AD88 /* MoreView.swift in Sources */,
+				CE03C4CA24EC2A26009DB475 /* ViewHelper.swift in Sources */,
 				B5CF18DB24E7A44000B6AD88 /* ProxyConfigView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ucm3/Preview Content\"";
-				DEVELOPMENT_TEAM = 4W8W7H98JG;
+				DEVELOPMENT_TEAM = DUV8UP2WXU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ucm3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

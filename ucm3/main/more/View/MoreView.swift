@@ -10,16 +10,15 @@ import SwiftUI
 
 struct MoreView: View {
     var body: some View {
-        List {
-            Text("4")
-            Text("4")
-            Text("4")
-            Text("4")
-            Text("4")
-        }
-        .tabItem {
-           Image(systemName: "ellipsis")
-            .imageScale(.large)
+        NavigationView {
+            List {
+                Text("4")
+                Text("4")
+                Text("4")
+                Text("4")
+                Text("4")
+            }
+            .navigationBarTitle("More")
         }
     }
 }
