@@ -24,7 +24,7 @@ struct MainView: View {
                 .imageScale(.large)
             }
             
-            MessageView()
+            MessageView(searchKeyword: .constant(""))
             .tabItem {
                Image(systemName: "envelope.fill")
                 .imageScale(.large)
